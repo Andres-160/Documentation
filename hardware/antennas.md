@@ -12,6 +12,16 @@ As nothing is free, changing your antennas is a trade-off, while omnidirectional
 The below link explains how the video quality is impacted under different scenarios.
 https://www.youtube.com/watch?v=T78JRAELjec
 
+### Antenna Hardware
+
+| Brand | Antenna | Polarization | Frequency GHz | Link * |
+|:---:|:---:|:---:|:---:|:---:|  
+| Maple | Flat Panel FY-05A | Vertical | 5.8G | [Maple leaf 14dB](https://de.aliexpress.com/item/1005002363442414.html?spm=a2g0o.detail.1000060.1.503d7a06Df2DUH&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=30e1916d-79e8-4bfb-83ba-eef6777847aa&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:30e1916d-79e8-4bfb-83ba-eef6777847aa,tpp_buckets:668%230%23131923%2335_668%230%23131923%2335_668%23888%233325%2315_668%23888%233325%2315_668%232846%238112%231997_668%235811%2327188%2383_668%232717%237558%23140_668%231000022185%231000066058%230_668%233468%2315612%23327_668%232846%238112%231997_668%235811%2327188%2383_668%232717%237558%23140_668%233164%239976%23381_668%233468%2315612%23327) |
+| Maple | Planar Antenna  | Vertical | 5.8G | [Planar 17dB](https://de.aliexpress.com/item/32989509234.html?spm=a2g0o.detail.1000014.1.61b153755LLnFy&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.192131.0&scm_id=1007.13338.192131.0&scm-url=1007.13338.192131.0&pvid=1dfa41c1-d87c-4da2-8620-67be3840574e&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.13338.192131.0,pvid:1dfa41c1-d87c-4da2-8620-67be3840574e,tpp_buckets:668%230%23131923%2378_668%23888%233325%2320_3338%230%23192131%230_3338%233142%239890%238_668%232846%238107%231934_668%232717%237565%23731_668%231000022185%231000066059%230_668%233422%2315392%23445) |
+
+*Links are only for reference purposes. 
+It will be added more as users test.  
+
 ### Range Calculation 
 A typical question is related to the maximum range, link budget or system range have relation to three main elements: Transmitter power, Antenna gains, and Receiver sensitivity. The next formula can be used to calculate  this:
 
@@ -36,17 +46,8 @@ A typical question is related to the maximum range, link budget or system range 
 | Flat Panel Direct / 14dBi | Maple 5dBi / 5dBi | 5.2GHz | 200 | 8.2 | Directional antenna with ATT |
 | Planar Direct / 17dBi | Omni / 5dBi | 5.8GHz | 500 | 16.37 | Directional antenna high range ATT |
 
-*Network card receiving sensitivity approx. -93dBm
-¡Link margin assumed 10 dB
+*Network card receiving sensitivity approx. -93dBm. Link margin assumed 10 dB
 
+To understand the impact in range against the transmitter power, the below logarithmic graph shows some calculations using different antenna sets:
 
-***
-
-| Brand | Antenna | Polarization | Frequency GHz | Link * |
-|:---:|:---:|:---:|:---:|:---:|  
-| Maple | Flat Panel FY-05A | Vertical | 5.8G | [Maple leaf 14dB](https://de.aliexpress.com/item/1005002363442414.html?spm=a2g0o.detail.1000060.1.503d7a06Df2DUH&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=30e1916d-79e8-4bfb-83ba-eef6777847aa&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:30e1916d-79e8-4bfb-83ba-eef6777847aa,tpp_buckets:668%230%23131923%2335_668%230%23131923%2335_668%23888%233325%2315_668%23888%233325%2315_668%232846%238112%231997_668%235811%2327188%2383_668%232717%237558%23140_668%231000022185%231000066058%230_668%233468%2315612%23327_668%232846%238112%231997_668%235811%2327188%2383_668%232717%237558%23140_668%233164%239976%23381_668%233468%2315612%23327) |
-| Maple | Planar Antenna  | Vertical | 5.8G | [Planar 17dB](https://de.aliexpress.com/item/32989509234.html?spm=a2g0o.detail.1000014.1.61b153755LLnFy&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.192131.0&scm_id=1007.13338.192131.0&scm-url=1007.13338.192131.0&pvid=1dfa41c1-d87c-4da2-8620-67be3840574e&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.13338.192131.0,pvid:1dfa41c1-d87c-4da2-8620-67be3840574e,tpp_buckets:668%230%23131923%2378_668%23888%233325%2320_3338%230%23192131%230_3338%233142%239890%238_668%232846%238107%231934_668%232717%237565%23731_668%231000022185%231000066059%230_668%233422%2315392%23445) |
-
-*Links are only for reference purposes. 
-
-under construction, it will be added more as users test.  
+![range vs power graph](https://github.com/Andres-160/Open.HD/blob/master/wiki-content/Community_Pictures/FPV%20range.png)
