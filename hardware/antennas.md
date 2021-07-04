@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=T78JRAELjec
 ### Range Calculation 
 A typical question is related to the maximum range, link budget or system range have relation to three main elements: Transmitter power, Antenna gains, and Receiver sensitivity. The next formula can be used to calculate  this:
 
-`R = 10^((Lfs-LM-32.44) - 20 * log10(f)) / 20)`
+`R = 10^( (Lfs-LM-32.44-20*Log(f)) / 20)`
 
 `Lfs =  Ptx + Gtx + Grx – Srx `
 
